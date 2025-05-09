@@ -1,18 +1,18 @@
-package com.example.statusapp.model;
+package com.example.server_status;
 
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
 public class StatusResponse {
-    
+
     @SerializedName("cpu")
-    public List<CpuInfo> cpu;
+    public CpuInfo cpu;
 
     @SerializedName("memory")
     public MemoryInfo memory;
 
     @SerializedName("storage")
-    public List<StorageInfo> storage;
+    public StorageInfo storage;
 
     @SerializedName("network")
     public NetworkInfo network;
@@ -21,38 +21,72 @@ public class StatusResponse {
     public HostInfo host;
 
     public static class CpuInfo {
-        public String core;
-        public String temperature;
-        public String frequency;
+        @SerializedName("model")
+        public String model;
+
+        @SerializedName("utilisation")
+        public float utilisation;
+
+        @SerializedName("temperatures")
+        public List<Float> temperatures;
     }
 
     public static class MemoryInfo {
-        public int total;
-        public int available;
-        public int cached;
-        public int swapTotal;
-        public int swapAvailable;
+        @SerializedName("total")
+        public long total;
+
+        @SerializedName("available")
+        public long available;
+
+        @SerializedName("cached")
+        public long cached;
+
+        @SerializedName("swap_total")
+        public long swapTotal;
+
+        @SerializedName("swap_available")
+        public long swapAvailable;
     }
 
     public static class StorageInfo {
-        public String filesystem;
+        @SerializedName("total")
         public long total;
+
+        @SerializedName("available")
+        public long available;
+
+        @SerializedName("used")
         public long used;
-        public long free;
     }
 
     public static class NetworkInfo {
+        @SerializedName("interface")
         public String interfaceName;
+
+        @SerializedName("rx")
         public long rx;
+
+        @SerializedName("tx")
         public long tx;
+
+        @SerializedName("speed")
         public int speed;
     }
 
     public static class HostInfo {
+        @SerializedName("hostname")
         public String hostname;
-        public String operatingSystem;
-        public String uptime;
-        public String appMemory;
-        public String loadAverage;
+
+        @SerializedName("os")
+        public String os;
+
+        @SerializedName("uptime")
+        public long uptime;
+
+        @SerializedName("app_memory")
+        public long appMemory;
+
+        @SerializedName("loadavg")
+        public List<Float> loadavg;
     }
 }

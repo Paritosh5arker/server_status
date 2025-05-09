@@ -1,10 +1,8 @@
-package com.example.statusapp.viewmodel;
+package com.example.server_status;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import com.example.statusapp.model.StatusResponse;
-import com.example.statusapp.network.RetrofitClient;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

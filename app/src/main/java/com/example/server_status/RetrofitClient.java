@@ -1,4 +1,4 @@
-package com.example.statusapp.network;
+package com.example.server_status;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -6,6 +6,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RetrofitClient {
     
     private static Retrofit retrofit;
+
+    // Update with your IP address
     private static final String BASE_URL = "http://192.168.1.147:9090";
 
     public static StatusApiService getApiService() {

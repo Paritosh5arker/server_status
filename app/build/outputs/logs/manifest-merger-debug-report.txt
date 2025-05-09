@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
 MERGED from [com.google.android.material:material:1.7.0] /workspace/.gradle/caches/8.12.1/transforms/2aced573f8a1c0195cfb62c4287be3e6/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] /workspace/.gradle/caches/8.12.1/transforms/f3f748cc9b433fd80f7e39ab0abbd779/transformed/jetified-appcompat-resources-1.5.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /workspace/.gradle/caches/8.12.1/transforms/43a952ab679299623b5223f0715797cf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:2:1-11:12
@@ -44,25 +44,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /workspace/.gradle/caches
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /workspace/.gradle/caches/8.12.1/transforms/679d603280ebcc875089e2d51dfb2a74/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /workspace/.gradle/caches/8.12.1/transforms/ebd0a62beb6d918594cebe156274b0a6/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /workspace/.gradle/caches/8.12.1/transforms/33e7ccc6b4b58f33ea57d628f3dd778a/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
-INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
+INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
 	package
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:70-105
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:25:5-40
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:1-22:12
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:1-51:12
 		INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:24:11-69
 application
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:4:5-20:19
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:27:5-45:19
 MERGED from [com.google.android.material:material:1.7.0] /workspace/.gradle/caches/8.12.1/transforms/2aced573f8a1c0195cfb62c4287be3e6/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] /workspace/.gradle/caches/8.12.1/transforms/2aced573f8a1c0195cfb62c4287be3e6/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] /workspace/.gradle/caches/8.12.1/transforms/43a952ab679299623b5223f0715797cf/transformed/constraintlayout-2.0.1/AndroidManifest.xml:9:5-20
@@ -80,31 +80,43 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /workspace/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] /workspace/.gradle/caches/8.12.1/transforms/15b16ea04270d143eb36d8115c1e3c86/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:33:9-35
 	android:label
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:7:9-41
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:32:9-41
 	android:icon
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:6:9-43
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:31:9-43
 	android:allowBackup
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:5:9-35
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:30:9-35
 	android:theme
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:9:9-47
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:34:9-47
+	android:networkSecurityConfig
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:29:9-69
+	android:usesCleartextTraffic
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:28:9-44
 activity#com.example.server_status.MainActivity
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:11:9-18:20
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:36:9-43:20
 	android:exported
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:13:13-36
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:12:13-41
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:37:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:14:13-17:29
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:39:13-42:29
 action#android.intent.action.MAIN
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:15:17-69
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:40:17-69
 	android:name
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:15:25-66
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:40:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:16:17-77
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:41:17-77
 	android:name
-		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:16:27-74
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:41:27-74
+uses-permission#android.permission.INTERNET
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:48:5-67
+	android:name
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:48:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:49:5-79
+	android:name
+		ADDED from /workspace/server_status/app/src/main/AndroidManifest.xml:49:22-76
 uses-sdk
 INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /workspace/server_status/app/src/main/AndroidManifest.xml
