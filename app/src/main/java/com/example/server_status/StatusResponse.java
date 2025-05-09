@@ -2,36 +2,48 @@ package com.example.server_status;
 
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
+import java.util.Map;
 
 public class StatusResponse {
 
     @SerializedName("cpu")
-    public CpuInfo cpu;
+    public CPU cpu;
 
     @SerializedName("memory")
-    public MemoryInfo memory;
+    public Memory memory;
 
     @SerializedName("storage")
-    public StorageInfo storage;
+    public Map<String, Storage> storage;
 
     @SerializedName("network")
-    public NetworkInfo network;
+    public Network network;
 
     @SerializedName("host")
-    public HostInfo host;
+    public Host host;
 
-    public static class CpuInfo {
-        @SerializedName("model")
-        public String model;
-
+    public static class CPU {
         @SerializedName("utilisation")
         public float utilisation;
 
         @SerializedName("temperatures")
-        public List<Float> temperatures;
+        public Map<String, List<Float>> temperatures;
+
+        @SerializedName("frequencies")
+        public Map<String, Frequency> frequencies;
     }
 
-    public static class MemoryInfo {
+    public static class Frequency {
+        @SerializedName("now")
+        public int now;
+
+        @SerializedName("min")
+        public int min;
+
+        @SerializedName("max")
+        public int max;
+    }
+
+    public static class Memory {
         @SerializedName("total")
         public long total;
 
@@ -48,32 +60,29 @@ public class StatusResponse {
         public long swapAvailable;
     }
 
-    public static class StorageInfo {
+    public static class Storage {
         @SerializedName("total")
         public long total;
 
         @SerializedName("available")
         public long available;
-
-        @SerializedName("used")
-        public long used;
     }
 
-    public static class NetworkInfo {
+    public static class Network {
         @SerializedName("interface")
         public String interfaceName;
+
+        @SerializedName("speed")
+        public int speed;
 
         @SerializedName("rx")
         public long rx;
 
         @SerializedName("tx")
         public long tx;
-
-        @SerializedName("speed")
-        public int speed;
     }
 
-    public static class HostInfo {
+    public static class Host {
         @SerializedName("hostname")
         public String hostname;
 
@@ -81,7 +90,7 @@ public class StatusResponse {
         public String os;
 
         @SerializedName("uptime")
-        public long uptime;
+        public double uptime;
 
         @SerializedName("app_memory")
         public long appMemory;
