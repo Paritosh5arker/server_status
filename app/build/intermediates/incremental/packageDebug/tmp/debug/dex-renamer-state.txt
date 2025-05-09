@@ -1,16 +1,10 @@
-#Fri May 09 12:33:59 UTC 2025
-path.4=4/classes.dex
-path.3=12/classes.dex
-path.2=10/classes.dex
-path.1=0/classes.dex
-path.0=classes.dex
-base.4=/workspace/server_status/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
-base.3=/workspace/server_status/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
-base.2=/workspace/server_status/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
+#Fri May 09 14:07:14 UTC 2025
+base.2=/workspace/server_status/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
+path.2=12/classes.dex
 base.1=/workspace/server_status/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+path.1=0/classes.dex
 base.0=/workspace/server_status/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-renamed.4=classes5.dex
+path.0=classes.dex

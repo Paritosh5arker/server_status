@@ -1,0 +1,172 @@
+/workspace/server_status/app/src/main/AndroidManifest.xml:28: Warning: Attribute usesCleartextTraffic is only used in API level 23 and higher (current min is 21) [UnusedAttribute]
+        android:usesCleartextTraffic="true" 
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/AndroidManifest.xml:29: Warning: Attribute networkSecurityConfig is only used in API level 24 and higher (current min is 21) [UnusedAttribute]
+        android:networkSecurityConfig="@xml/network_security_config"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedAttribute":
+   This check finds attributes set in XML files that were introduced in a
+   version newer than the oldest version targeted by your application (with
+   the minSdkVersion attribute).
+
+   This is not an error; the application will simply ignore the attribute.
+   However, if the attribute is important to the appearance or functionality
+   of your application, you should consider finding an alternative way to
+   achieve the same result with only available attributes, and then you can
+   optionally create a copy of the layout in a layout-vNN folder which will be
+   used on API NN or higher where you can take advantage of the newer
+   attribute.
+
+   Note: This check does not only apply to attributes. For example, some tags
+   can be unused too, such as the new <tag> element in layouts introduced in
+   API 21.
+
+/workspace/server_status/app/src/main/AndroidManifest.xml:48: Warning: <uses-permission> tag appears after <application> tag [ManifestOrder]
+    <uses-permission android:name="android.permission.INTERNET" />
+     ~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ManifestOrder":
+   The <application> tag should appear after the elements which declare which
+   version you need, which features you need, which libraries you need, and so
+   on. In the past there have been subtle bugs (such as themes not getting
+   applied correctly) when the <application> tag appears before some of these
+   other elements, so it's best to order your manifest in the logical
+   dependency order.
+
+/workspace/server_status/app/build.gradle:30: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel than 2.5.1 is available: 2.9.0 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel:2.5.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/build.gradle:31: Warning: A newer version of androidx.lifecycle:lifecycle-livedata than 2.5.1 is available: 2.9.0 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.5.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/build.gradle:33: Warning: A newer version of androidx.appcompat:appcompat than 1.5.1 is available: 1.7.0 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/build.gradle:34: Warning: A newer version of com.google.android.material:material than 1.7.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/workspace/server_status/app/src/main/java/com/example/server_status/StatusViewModel.java:18: Warning: This field leaks a context object [StaticFieldLeak]
+    private Context context;
+    ~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+/workspace/server_status/app/src/main/res/mipmap/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+
+   Explanation for issues of type "IconLauncherShape":
+   According to the Android Design Guide
+   (https://material.io/design/iconography/) your launcher icons should "use a
+   distinct silhouette", a "three-dimensional, front view, with a slight
+   perspective as if viewed from above, so that users perceive some depth."
+
+   The unique silhouette implies that your launcher icon should not be a
+   filled square.
+
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:41: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    cpuInfo.setText("CPU Utilization: " + status.cpu.utilisation + "%");
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:41: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    cpuInfo.setText("CPU Utilization: " + status.cpu.utilisation + "%");
+                                    ~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:42: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    memoryInfo.setText("Memory: " + status.memory.available / 1024 + " MB free of " + status.memory.total / 1024 + " MB");
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:42: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    memoryInfo.setText("Memory: " + status.memory.available / 1024 + " MB free of " + status.memory.total / 1024 + " MB");
+                                       ~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:42: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    memoryInfo.setText("Memory: " + status.memory.available / 1024 + " MB free of " + status.memory.total / 1024 + " MB");
+                                                                                     ~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:42: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    memoryInfo.setText("Memory: " + status.memory.available / 1024 + " MB free of " + status.memory.total / 1024 + " MB");
+                                                                                                                                   ~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:43: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    networkInfo.setText("Network: RX=" + status.network.rx + " bytes, TX=" + status.network.tx + " bytes");
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:43: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    networkInfo.setText("Network: RX=" + status.network.rx + " bytes, TX=" + status.network.tx + " bytes");
+                                        ~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:43: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    networkInfo.setText("Network: RX=" + status.network.rx + " bytes, TX=" + status.network.tx + " bytes");
+                                                                             ~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:43: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    networkInfo.setText("Network: RX=" + status.network.rx + " bytes, TX=" + status.network.tx + " bytes");
+                                                                                                                 ~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:44: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                    hostInfo.setText("Host: " + status.host.hostname + " (" + status.host.os + ")");
+                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/java/com/example/server_status/MainActivity.java:44: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    hostInfo.setText("Host: " + status.host.hostname + " (" + status.host.os + ")");
+                                     ~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:11: Warning: Hardcoded string "Loading CPU Info...", should use @string resource [HardcodedText]
+        android:text="Loading CPU Info..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:17: Warning: Hardcoded string "Loading Memory Info...", should use @string resource [HardcodedText]
+        android:text="Loading Memory Info..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:23: Warning: Hardcoded string "Loading Storage Info...", should use @string resource [HardcodedText]
+        android:text="Loading Storage Info..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:29: Warning: Hardcoded string "Loading Network Info...", should use @string resource [HardcodedText]
+        android:text="Loading Network Info..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:35: Warning: Hardcoded string "Loading Host Info...", should use @string resource [HardcodedText]
+        android:text="Loading Host Info..."
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:44: Warning: Hardcoded string "Retry", should use @string resource [HardcodedText]
+        android:text="Retry"
+        ~~~~~~~~~~~~~~~~~~~~
+/workspace/server_status/app/src/main/res/layout/activity_main.xml:51: Warning: Hardcoded string "Set API Endpoint", should use @string resource [HardcodedText]
+        android:text="Set API Endpoint"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 28 warnings
