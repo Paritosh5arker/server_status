@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.2" type="conditional_incidents">
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffff00000" requiresApi="ffffffffff800000"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="29"
+            column="9"
+            startOffset="909"
+            endLine="29"
+            endColumn="69"
+            endOffset="969"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffff00000"/>
+            <api-levels id="requiresApi"
+                value="ffffffffff800000"/>
+            <entry
+                name="message"
+                string="Attribute `networkSecurityConfig` is only used in API level 24 and higher (current min is %1$s)"/>
+        </map>
+    </incident>
+
+    <incident
+        id="UnusedAttribute"
+        severity="warning"
+        message="">
+        <fix-data minSdk="fffffffffff00000" requiresApi="ffffffffffc00000"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="28"
+            column="9"
+            startOffset="864"
+            endLine="28"
+            endColumn="44"
+            endOffset="899"/>
+        <map>
+            <api-levels id="minSdk"
+                value="fffffffffff00000"/>
+            <api-levels id="requiresApi"
+                value="ffffffffffc00000"/>
+            <entry
+                name="message"
+                string="Attribute `usesCleartextTraffic` is only used in API level 23 and higher (current min is %1$s)"/>
+        </map>
+    </incident>
+
+</incidents>

@@ -36,4 +36,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
+    <!-- 🔥 Buttons for Retry and Set API -->
+    <Button
+        android:id="@+id/retry_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Retry"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/set_ip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set API Endpoint"
+        android:layout_marginTop="8dp"/>
+
 </LinearLayout>
