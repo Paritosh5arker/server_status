@@ -1,62 +1,42 @@
-// package com.example.statusapp;
-
-// import androidx.appcompat.app.AppCompatActivity;
-// import androidx.lifecycle.ViewModelProvider;
-// import android.os.Bundle;
-// import android.widget.TextView;
-
-// import com.example.statusapp.model.StatusResponse;
-// import com.example.statusapp.viewmodel.StatusViewModel;
-
-// public class MainActivity extends AppCompatActivity {
-
-//     private StatusViewModel statusViewModel;
-//     private TextView cpuInfo, memoryInfo, storageInfo, networkInfo, hostInfo;
-
-//     @Override
-//     protected void onCreate(Bundle savedInstanceState) {
-//         super.onCreate(savedInstanceState);
-//         setContentView(R.layout.activity_main);
-
-//         cpuInfo = findViewById(R.id.cpu_info);
-//         memoryInfo = findViewById(R.id.memory_info);
-//         storageInfo = findViewById(R.id.storage_info);
-//         networkInfo = findViewById(R.id.network_info);
-//         hostInfo = findViewById(R.id.host_info);
-
-//         statusViewModel = new ViewModelProvider(this).get(StatusViewModel.class);
-        
-//         statusViewModel.getStatusData().observe(this, this::updateUI);
-//         statusViewModel.fetchStatus();
-//     }
-
-//     private void updateUI(StatusResponse status) {
-//         cpuInfo.setText("CPU Cores: " + status.cpu.size());
-//         memoryInfo.setText("Memory Available: " + status.memory.available);
-//         storageInfo.setText("Storage Used: " + status.storage.get(0).used + " bytes");
-//         networkInfo.setText("Network RX: " + status.network.rx + " bytes");
-//         hostInfo.setText("Hostname: " + status.host.hostname);
-//     }
-// }
-package com.example.server_status;
-
-import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
-import android.widget.TextView;
-
 public class MainActivity extends AppCompatActivity {
 
-    private TextView cpuInfo, memoryInfo, storageInfo, networkInfo, hostInfo;
+    private TextView cpuModel, cpuTemp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard);
 
-        cpuInfo = findViewById(R.id.cpu_info);
-        memoryInfo = findViewById(R.id.memory_info);
-        storageInfo = findViewById(R.id.storage_info);
-        networkInfo = findViewById(R.id.network_info);
-        hostInfo = findViewById(R.id.host_info);
+        cpuModel = findViewById(R.id.cpu_model);
+        cpuTemp = findViewById(R.id.cpu_temp);
+
+        fetchServerData();
+    }
+
+    private void fetchServerData() {
+        StatusApiService apiService = RetrofitClient.getApiService();
+        Call<StatusResponse> call = apiService.getStatus();
+
+        call.enqueue(new Callback<StatusResponse>() {
+            @Override
+            public void onResponse(Call<StatusResponse> call, Response<StatusResponse> response) {
+                if (response.isSuccessful() && response.body() != null) {
+                    StatusResponse status = response.body();
+
+                    // Update UI
+                    cpuModel.setText(String.format("%s", status.cpu.model));
+                    cpuTemp.setText(String.format("%.2f°C", status.cpu.temperatures.get("temp1").get(0)));
+
+                    // Update Memory, Storage, Network, Host similarly
+                } else {
+                    Log.e("API_ERROR", "Failed to get response: " + response.message());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<StatusResponse> call, Throwable t) {
+                Log.e("API_ERROR", "Network call failed: " + t.getMessage());
+            }
+        });
     }
 }

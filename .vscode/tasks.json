@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "assembleDebug",
+      "type": "shell",
+      "command": "./gradlew assembleDebug",
+      "problemMatcher": []
+    },
+    {
+      "label": "clean",
+      "type": "shell",
+      "command": "./gradlew clean",
+      "problemMatcher": []
+    }
+  ]
+}

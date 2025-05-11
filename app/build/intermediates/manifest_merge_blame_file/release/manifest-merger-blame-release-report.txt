@@ -1,0 +1,79 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.server_status"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:23:5-67
+11-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:23:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:5-79
+12-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:22-76
+13
+14    <application
+14-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:4:5-22:19
+15        android:allowBackup="true"
+15-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:5:9-35
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\15b16ea04270d143eb36d8115c1e3c86\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:6:9-43
+18        android:label="@string/app_name"
+18-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:7:9-41
+19        android:networkSecurityConfig="@xml/network_security_config"
+19-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:8:9-69
+20        android:supportsRtl="true"
+20-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:10:9-35
+21        android:theme="@style/Theme.AppCompat"
+21-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:11:9-47
+22        android:usesCleartextTraffic="true" >
+22-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:9:9-44
+23        <activity
+23-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:13:9-20:20
+24            android:name="com.example.server_status.MainActivity"
+24-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:14:13-41
+25            android:exported="true" >
+25-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:15:13-36
+26            <intent-filter>
+26-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:16:13-19:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:17:17-69
+27-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:17-77
+29-->D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:27-74
+30            </intent-filter>
+31        </activity>
+32
+33        <provider
+33-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+34            android:name="androidx.startup.InitializationProvider"
+34-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+35            android:authorities="com.example.server_status.androidx-startup"
+35-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+36            android:exported="false" >
+36-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+37            <meta-data
+37-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+38                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+38-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+39                android:value="androidx.startup" />
+39-->[androidx.emoji2:emoji2:1.2.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\b5b677818be9fec1d2a69c8838231b5d\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+40            <meta-data
+40-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\9d66bd437c7fecfb0b245915126138f4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+41                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+41-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\9d66bd437c7fecfb0b245915126138f4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+42                android:value="androidx.startup" />
+42-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\9d66bd437c7fecfb0b245915126138f4\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+43        </provider>
+44    </application>
+45
+46</manifest>

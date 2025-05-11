@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.2" type="incidents">
+
+    <incident
+        id="ManifestOrder"
+        severity="warning"
+        message="`&lt;uses-permission>` tag appears after `&lt;application>` tag">
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="23"
+            column="6"
+            startOffset="809"
+            endLine="23"
+            endColumn="21"
+            endOffset="824"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading CPU Info...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="11"
+            column="9"
+            startOffset="328"
+            endLine="11"
+            endColumn="43"
+            endOffset="362"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading Memory Info...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="17"
+            column="9"
+            startOffset="521"
+            endLine="17"
+            endColumn="46"
+            endOffset="558"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading Storage Info...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="23"
+            column="9"
+            startOffset="718"
+            endLine="23"
+            endColumn="47"
+            endOffset="756"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading Network Info...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="29"
+            column="9"
+            startOffset="916"
+            endLine="29"
+            endColumn="47"
+            endOffset="954"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Loading Host Info...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="35"
+            column="9"
+            startOffset="1111"
+            endLine="35"
+            endColumn="44"
+            endOffset="1146"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="274"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="50"
+            column="37"
+            startOffset="1797"
+            endLine="50"
+            endColumn="87"
+            endOffset="1847"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="50"
+            column="37"
+            startOffset="1797"
+            endLine="50"
+            endColumn="56"
+            endOffset="1816"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="51"
+            column="40"
+            startOffset="1889"
+            endLine="51"
+            endColumn="116"
+            endOffset="1965"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="51"
+            column="40"
+            startOffset="1889"
+            endLine="51"
+            endColumn="60"
+            endOffset="1909"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="52"
+            column="41"
+            startOffset="2008"
+            endLine="52"
+            endColumn="120"
+            endOffset="2087"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="52"
+            column="41"
+            startOffset="2008"
+            endLine="52"
+            endColumn="62"
+            endOffset="2029"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="53"
+            column="41"
+            startOffset="2130"
+            endLine="53"
+            endColumn="107"
+            endOffset="2196"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="53"
+            column="41"
+            startOffset="2130"
+            endLine="53"
+            endColumn="55"
+            endOffset="2144"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="53"
+            column="78"
+            startOffset="2167"
+            endLine="53"
+            endColumn="87"
+            endOffset="2176"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="54"
+            column="38"
+            startOffset="2236"
+            endLine="54"
+            endColumn="102"
+            endOffset="2300"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="54"
+            column="38"
+            startOffset="2236"
+            endLine="54"
+            endColumn="50"
+            endOffset="2248"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/example/server_status/MainActivity.java"
+            line="54"
+            column="76"
+            startOffset="2274"
+            endLine="54"
+            endColumn="85"
+            endOffset="2283"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 35"
+            oldString="33"
+            replacement="35"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="13"
+            column="9"
+            startOffset="263"
+            endLine="13"
+            endColumn="21"
+            endOffset="275"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel than 2.5.1 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.5.1"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="39"
+            column="20"
+            startOffset="923"
+            endLine="39"
+            endColumn="66"
+            endOffset="969"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata than 2.5.1 is available: 2.9.0">
+        <fix-replace
+            description="Change to 2.9.0"
+            family="Update versions"
+            oldString="2.5.1"
+            replacement="2.9.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="40"
+            column="20"
+            startOffset="990"
+            endLine="40"
+            endColumn="65"
+            endOffset="1035"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.5.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.5.1"
+            replacement="1.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="42"
+            column="20"
+            startOffset="1110"
+            endLine="42"
+            endColumn="56"
+            endOffset="1146"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.7.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.7.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="43"
+            column="20"
+            startOffset="1167"
+            endLine="43"
+            endColumn="64"
+            endOffset="1211"/>
+    </incident>
+
+</incidents>

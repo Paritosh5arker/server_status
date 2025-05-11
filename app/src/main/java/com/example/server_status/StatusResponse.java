@@ -2,17 +2,18 @@ package com.example.statusapp.model;
 
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
+import java.util.Map;
 
 public class StatusResponse {
-    
+
     @SerializedName("cpu")
-    public List<CpuInfo> cpu;
+    public CpuInfo cpu;
 
     @SerializedName("memory")
     public MemoryInfo memory;
 
     @SerializedName("storage")
-    public List<StorageInfo> storage;
+    public StorageInfo storage;
 
     @SerializedName("network")
     public NetworkInfo network;
@@ -21,38 +22,80 @@ public class StatusResponse {
     public HostInfo host;
 
     public static class CpuInfo {
-        public String core;
-        public String temperature;
-        public String frequency;
+        @SerializedName("model")
+        public String model;
+
+        @SerializedName("utilisation")
+        public double utilisation;
+
+        // 🔄 Update here to handle the array of temperatures
+        @SerializedName("temperatures")
+        public Map<String, List<Double>> temperatures;
+
+        @SerializedName("frequencies")
+        public Map<String, CpuFrequency> frequencies;
+
+        public static class CpuFrequency {
+            public int now;
+            public int min;
+            public Integer base;
+            public int max;
+        }
     }
 
     public static class MemoryInfo {
-        public int total;
-        public int available;
-        public int cached;
-        public int swapTotal;
-        public int swapAvailable;
+        @SerializedName("total")
+        public long total;
+
+        @SerializedName("available")
+        public long available;
+
+        @SerializedName("cached")
+        public long cached;
     }
 
     public static class StorageInfo {
-        public String filesystem;
+        // ✅ Updated: Now it maps "OS" as a full object
+        @SerializedName("OS")
+        public OperatingSystem os;
+
+        @SerializedName("total")
         public long total;
-        public long used;
-        public long free;
+
+        @SerializedName("available")
+        public long available;
+
+        public static class OperatingSystem {
+            @SerializedName("name")
+            public String name;
+
+            @SerializedName("version")
+            public String version;
+        }
     }
 
     public static class NetworkInfo {
+        @SerializedName("interface")
         public String interfaceName;
-        public long rx;
-        public long tx;
+
+        @SerializedName("speed")
         public int speed;
+
+        @SerializedName("rx")
+        public long rx;
+
+        @SerializedName("tx")
+        public long tx;
     }
 
     public static class HostInfo {
+        @SerializedName("hostname")
         public String hostname;
-        public String operatingSystem;
-        public String uptime;
-        public String appMemory;
-        public String loadAverage;
+
+        @SerializedName("os")
+        public String os;
+
+        @SerializedName("uptime")
+        public double uptime;
     }
 }

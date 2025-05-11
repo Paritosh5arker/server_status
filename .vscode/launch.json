@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Android App",
+      "request": "launch",
+      "mainClass": "com.example.server_status.MainActivity",
+      "projectName": "server_status",
+      "vmArgs": "-Dfile.encoding=UTF-8",
+      "preLaunchTask": "assembleDebug",
+      "postDebugTask": "clean",
+      "args": [],
+      "console": "internalConsole"
+    }
+  ]
+}
