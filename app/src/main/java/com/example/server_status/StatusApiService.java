@@ -1,11 +1,12 @@
-package com.example.statusapp.network;
+package com.example.server_status;
+
+import com.example.statusapp.model.StatusResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
-import com.example.statusapp.model.StatusResponse;
 
 public interface StatusApiService {
 
-    @GET("/api/status")
+    @GET("/api/status") // Adjust if your endpoint is different
     Call<StatusResponse> getStatus();
 }

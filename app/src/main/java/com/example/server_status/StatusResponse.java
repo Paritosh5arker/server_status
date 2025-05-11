@@ -13,7 +13,7 @@ public class StatusResponse {
     public MemoryInfo memory;
 
     @SerializedName("storage")
-    public StorageInfo storage;
+    public Map<String, StorageInfo> storage;
 
     @SerializedName("network")
     public NetworkInfo network;
@@ -55,24 +55,16 @@ public class StatusResponse {
     }
 
     public static class StorageInfo {
-        // ✅ Updated: Now it maps "OS" as a full object
-        @SerializedName("OS")
-        public OperatingSystem os;
-
         @SerializedName("total")
-        public long total;
+        public double total;  // ✅ Change from `long` to `double`
 
         @SerializedName("available")
-        public long available;
+        public double available;  // ✅ Change from `long` to `double`
 
-        public static class OperatingSystem {
-            @SerializedName("name")
-            public String name;
-
-            @SerializedName("version")
-            public String version;
-        }
+        @SerializedName("icon")
+        public String icon;
     }
+
 
     public static class NetworkInfo {
         @SerializedName("interface")

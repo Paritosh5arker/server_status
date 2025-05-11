@@ -180,6 +180,32 @@
       jars="C:\Users\laptop universe\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.9.0\8a1167e089096758b49f9b34066ef98b2f4b37aa\gson-2.9.0.jar"
       resolved="com.google.code.gson:gson:2.9.0"/>
   <library
+      name="androidx.cardview:cardview:1.0.0@aar"
+      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0\jars\classes.jar"
+      resolved="androidx.cardview:cardview:1.0.0"
+      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="com.github.PhilJay:MPAndroidChart:v3.1.0@aar"
+      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\839d6de410d3d8afe512f43d921fa652\transformed\jetified-MPAndroidChart-v3.1.0\jars\classes.jar"
+      resolved="com.github.PhilJay:MPAndroidChart:v3.1.0"
+      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\839d6de410d3d8afe512f43d921fa652\transformed\jetified-MPAndroidChart-v3.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0@jar"
       jars="C:\Users\laptop universe\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.9.0\f320478990d05e0cfaadd74f9619fd6027adbf37\kotlin-stdlib-jdk7-1.9.0.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.0"/>
@@ -377,19 +403,6 @@
       jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\959dd0c7f2963c0267005b56bbffb1b6\transformed\cursoradapter-1.0.0\jars\classes.jar"
       resolved="androidx.cursoradapter:cursoradapter:1.0.0"
       folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\959dd0c7f2963c0267005b56bbffb1b6\transformed\cursoradapter-1.0.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
-      name="androidx.cardview:cardview:1.0.0@aar"
-      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0\jars\classes.jar"
-      resolved="androidx.cardview:cardview:1.0.0"
-      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

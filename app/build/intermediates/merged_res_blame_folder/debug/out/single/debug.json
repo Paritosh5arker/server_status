@@ -1,5 +1,9 @@
 [
     {
+        "merged": "com.example.server_status.app-merged_res-29:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.server_status.app-main-31:/layout/activity_dashboard.xml"
+    },
+    {
         "merged": "com.example.server_status.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "com.example.server_status.app-pngs-25:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
@@ -56,8 +60,20 @@
         "source": "com.example.server_status.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.server_status.app-merged_res-29:/layout_activity_cpu_detail.xml.flat",
+        "source": "com.example.server_status.app-main-31:/layout/activity_cpu_detail.xml"
+    },
+    {
         "merged": "com.example.server_status.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "com.example.server_status.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.server_status.app-merged_res-29:/xml_activity_cpu_detail.xml.flat",
+        "source": "com.example.server_status.app-main-31:/xml/activity_cpu_detail.xml"
+    },
+    {
+        "merged": "com.example.server_status.app-merged_res-29:/drawable_ic_cpu.xml.flat",
+        "source": "com.example.server_status.app-main-31:/drawable/ic_cpu.xml"
     },
     {
         "merged": "com.example.server_status.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",

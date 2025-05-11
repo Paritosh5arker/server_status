@@ -1,3 +1,28 @@
+D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:111: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    cpuInfo.setText(String.format("CPU Usage: %.2f%%, Temp: %.1f°C", cpuUsage, temp));
+                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:112: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                    memoryInfo.setText(String.format("Memory: %d / %d MB", memAvailable, memTotal));
+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:146: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        return String.format("%.1f %sB", bytes / Math.pow(1024, exp), pre);
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.US) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
 D:\My_Stuff\Coding\Android\server_status\app\build.gradle:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
         targetSdk 33
         ~~~~~~~~~~~~
@@ -68,6 +93,9 @@ D:\My_Stuff\Coding\Android\server_status\app\build.gradle:42: Warning: A newer v
 D:\My_Stuff\Coding\Android\server_status\app\build.gradle:43: Warning: A newer version of com.google.android.material:material than 1.7.0 is available: 1.12.0 [GradleDependency]
     implementation 'com.google.android.material:material:1.7.0'
                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\build.gradle:44: Warning: A newer version of com.google.android.material:material than 1.7.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
    Explanation for issues of type "GradleDependency":
    This detector looks for usages of libraries where the version you are using
@@ -76,6 +104,15 @@ D:\My_Stuff\Coding\Android\server_status\app\build.gradle:43: Warning: A newer v
    However, you may simply not be aware that a more recent version is
    available, and that is what this lint check helps find.
 
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\xml\activity_cpu_detail.xml:2: Warning: The resource R.xml.activity_cpu_detail appears to be unused [UnusedResources]
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:2: Warning: The resource R.layout.activity_dashboard appears to be unused [UnusedResources]
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\drawable\ic_cpu.xml:1: Warning: The resource R.drawable.ic_cpu appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:tint="#4B2F2F" android:viewportHeight="24" android:viewportWidth="24" android:width="24dp">
+^
 D:\My_Stuff\Coding\Android\server_status\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The resource R.mipmap.ic_launcher_round appears to be unused [UnusedResources]
 <adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
 ^
@@ -110,69 +147,54 @@ D:\My_Stuff\Coding\Android\server_status\app\src\main\res\mipmap-anydpi-v26\ic_l
    application iconwill not show if your monochrome attribute is not also
    specified in android:roundIcon.
 
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:50: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
-                    cpuInfo.setText("CPU Utilisation: " + status.cpu.utilisation + "%");
-                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:50: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    cpuInfo.setText("CPU Utilisation: " + status.cpu.utilisation + "%");
-                                    ~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:51: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
-                    memoryInfo.setText("Memory Available: " + status.memory.available + " / " + status.memory.total);
-                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:51: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    memoryInfo.setText("Memory Available: " + status.memory.available + " / " + status.memory.total);
-                                       ~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:52: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
-                    storageInfo.setText("Storage Available: " + status.storage.available + " / " + status.storage.total);
-                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:52: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    storageInfo.setText("Storage Available: " + status.storage.available + " / " + status.storage.total);
-                                        ~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:53: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
-                    networkInfo.setText("Network RX: " + status.network.rx + " | TX: " + status.network.tx);
-                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:53: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    networkInfo.setText("Network RX: " + status.network.rx + " | TX: " + status.network.tx);
-                                        ~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:53: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    networkInfo.setText("Network RX: " + status.network.rx + " | TX: " + status.network.tx);
-                                                                             ~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:54: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
-                    hostInfo.setText("Hostname: " + status.host.hostname + " | OS: " + status.host.os);
-                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:54: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    hostInfo.setText("Hostname: " + status.host.hostname + " | OS: " + status.host.os);
-                                     ~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\java\com\example\server_status\MainActivity.java:54: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
-                    hostInfo.setText("Hostname: " + status.host.hostname + " | OS: " + status.host.os);
-                                                                           ~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:34: Warning: Missing contentDescription attribute on image [ContentDescription]
+                <ImageView
+                 ~~~~~~~~~
 
-   Explanation for issues of type "SetTextI18n":
-   When calling TextView#setText
-   * Never call Number#toString() to format numbers; it will not handle
-   fraction separators and locale-specific digits properly. Consider using
-   String#format with proper format specifications (%d or %f) instead.
-   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
-   text can not be properly translated to other languages. Consider using
-   Android resource strings instead.
-   * Do not build messages by concatenating text chunks. Such messages can not
-   be properly translated.
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
 
-   https://developer.android.com/guide/topics/resources/localization.html
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
 
-D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:11: Warning: Hardcoded string "Loading CPU Info...", should use @string resource [HardcodedText]
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:16: Warning: Hardcoded string "Status", should use @string resource [HardcodedText]
+            android:text="Status"
+            ~~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:45: Warning: Hardcoded string "Model", should use @string resource [HardcodedText]
+                    android:text="Model"
+                    ~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:52: Warning: Hardcoded string "0°C", should use @string resource [HardcodedText]
+                    android:text="0°C"
+                    ~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:21: Warning: Hardcoded string "Error loading data", should use @string resource [HardcodedText]
+        android:text="Error loading data"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:28: Warning: Hardcoded string "Loading CPU Info...", should use @string resource [HardcodedText]
         android:text="Loading CPU Info..."
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:17: Warning: Hardcoded string "Loading Memory Info...", should use @string resource [HardcodedText]
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:35: Warning: Hardcoded string "Loading Memory Info...", should use @string resource [HardcodedText]
         android:text="Loading Memory Info..."
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:23: Warning: Hardcoded string "Loading Storage Info...", should use @string resource [HardcodedText]
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:42: Warning: Hardcoded string "Loading Storage Info...", should use @string resource [HardcodedText]
         android:text="Loading Storage Info..."
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:29: Warning: Hardcoded string "Loading Network Info...", should use @string resource [HardcodedText]
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:49: Warning: Hardcoded string "Loading Network Info...", should use @string resource [HardcodedText]
         android:text="Loading Network Info..."
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:35: Warning: Hardcoded string "Loading Host Info...", should use @string resource [HardcodedText]
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.xml:56: Warning: Hardcoded string "Loading Host Info...", should use @string resource [HardcodedText]
         android:text="Loading Host Info..."
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -190,4 +212,13 @@ D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_main.x
    There are quickfixes to automatically extract this hardcoded string into a
    resource lookup.
 
-0 errors, 27 warnings
+D:\My_Stuff\Coding\Android\server_status\app\src\main\res\layout\activity_dashboard.xml:44: Warning: When you define paddingStart you should probably also define paddingEnd for right-to-left symmetry [RtlSymmetry]
+                    android:paddingStart="8dp"
+                    ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RtlSymmetry":
+   If you specify padding or margin on the left side of a layout, you should
+   probably also specify padding on the right side (and vice versa) for
+   right-to-left layout symmetry.
+
+0 errors, 28 warnings

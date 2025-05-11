@@ -204,6 +204,19 @@
       jars="C:\Users\laptop universe\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.9.0\8a1167e089096758b49f9b34066ef98b2f4b37aa\gson-2.9.0.jar"
       resolved="com.google.code.gson:gson:2.9.0"/>
   <library
+      name="androidx.cardview:cardview:1.0.0@aar"
+      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0\jars\classes.jar"
+      resolved="androidx.cardview:cardview:1.0.0"
+      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
       name="androidx.lifecycle:lifecycle-livedata:2.5.1@aar"
       jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\66b125cc79bba36346a8770f503e5f51\transformed\lifecycle-livedata-2.5.1\jars\classes.jar"
       resolved="androidx.lifecycle:lifecycle-livedata:2.5.1"
@@ -373,19 +386,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="androidx.cardview:cardview:1.0.0@aar"
-      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0\jars\classes.jar"
-      resolved="androidx.cardview:cardview:1.0.0"
-      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4ad765017c3e0acc57d5d59c2efaf632\transformed\cardview-1.0.0"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="androidx.lifecycle:lifecycle-runtime:2.5.1@aar"
       jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\4bc91cc8d4756b3a4bf19b3876c874ba\transformed\lifecycle-runtime-2.5.1\jars\classes.jar"
       resolved="androidx.lifecycle:lifecycle-runtime:2.5.1"
@@ -509,6 +509,19 @@
       name="androidx.constraintlayout:constraintlayout-solver:2.0.1@jar"
       jars="C:\Users\laptop universe\.gradle\caches\modules-2\files-2.1\androidx.constraintlayout\constraintlayout-solver\2.0.1\30988fe2d77f3fe3bf7551bb8a8b795fad7e7226\constraintlayout-solver-2.0.1.jar"
       resolved="androidx.constraintlayout:constraintlayout-solver:2.0.1"/>
+  <library
+      name="com.github.PhilJay:MPAndroidChart:v3.1.0@aar"
+      jars="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\839d6de410d3d8afe512f43d921fa652\transformed\jetified-MPAndroidChart-v3.1.0\jars\classes.jar"
+      resolved="com.github.PhilJay:MPAndroidChart:v3.1.0"
+      folder="C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\839d6de410d3d8afe512f43d921fa652\transformed\jetified-MPAndroidChart-v3.1.0"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
   <library
       name="D:\My_Stuff\Coding\Android\server_status@@:app::debug"
       jars="D:\My_Stuff\Coding\Android\server_status\app\build\intermediates\compile_app_classes_jar\debug\classes.jar"

@@ -754,6 +754,19 @@ library {
   repo_index {
   }
 }
+library {
+  maven_library {
+    groupId: "com.github.PhilJay"
+    artifactId: "MPAndroidChart"
+    version: "v3.1.0"
+  }
+  digests {
+    sha256: "V\315\021<1\2330\034e\a\216\310\242o/\217g\252N\354\215i\023\311\360\n\326,5C\v\321"
+  }
+  repo_index {
+    value: 2
+  }
+}
 library_dependencies {
   library_dep_index: 1
   library_dep_index: 4
@@ -1102,6 +1115,10 @@ library_dependencies {
   library_dep_index: 14
   library_dep_index: 16
 }
+library_dependencies {
+  library_index: 62
+  library_dep_index: 11
+}
 module_dependencies {
   module_name: "base"
   dependency_index: 0
@@ -1112,6 +1129,8 @@ module_dependencies {
   dependency_index: 9
   dependency_index: 31
   dependency_index: 49
+  dependency_index: 50
+  dependency_index: 62
 }
 repositories {
   maven_repo {
@@ -1121,5 +1140,10 @@ repositories {
 repositories {
   maven_repo {
     url: "https://repo.maven.apache.org/maven2/"
+  }
+}
+repositories {
+  maven_repo {
+    url: "https://jitpack.io"
   }
 }

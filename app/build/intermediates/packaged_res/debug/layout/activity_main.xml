@@ -6,34 +6,56 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <ProgressBar
+        android:id="@+id/loading_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#B00020"
+        android:text="Error loading data"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:visibility="gone" />
+
     <TextView
         android:id="@+id/cpu_info"
         android:text="Loading CPU Info..."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/memory_info"
         android:text="Loading Memory Info..."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/storage_info"
         android:text="Loading Storage Info..."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/network_info"
         android:text="Loading Network Info..."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
 
     <TextView
         android:id="@+id/host_info"
         android:text="Loading Host Info..."
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:padding="8dp" />
 
 </LinearLayout>
