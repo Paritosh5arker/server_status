@@ -20,6 +20,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import android.content.Intent;
+import android.widget.Button;
+
 public class MainActivity extends AppCompatActivity {
 
     private TextView cpuInfo, memoryInfo, storageInfo, networkInfo, hostInfo;
@@ -43,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
         errorText = findViewById(R.id.error_text);
 
         fetchServerData(); // initial fetch
+
+        Button openServiceBtn = findViewById(R.id.openServiceBtn);
+        openServiceBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, ServiceActivity.class);
+            startActivity(intent);
+        });
     }
 
     @Override

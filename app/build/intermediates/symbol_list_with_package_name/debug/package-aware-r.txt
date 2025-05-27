@@ -2835,6 +2835,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id openServiceBtn
 id outline
 id outward
 id packed
@@ -2887,6 +2888,10 @@ id search_voice_btn
 id select_dialog_listview
 id selected
 id selection_type
+id serviceDesc
+id serviceName
+id serviceRecyclerView
+id serviceToggle
 id shortcut
 id showCustom
 id showHome
@@ -3108,6 +3113,7 @@ layout abc_tooltip
 layout activity_cpu_detail
 layout activity_dashboard
 layout activity_main
+layout activity_service
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3124,6 +3130,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_service
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

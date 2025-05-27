@@ -21,6 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.server_status.ServiceActivity" />
         <activity
             android:name="com.example.server_status.MainActivity"
             android:exported="true" >

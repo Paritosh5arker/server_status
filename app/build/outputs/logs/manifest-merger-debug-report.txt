@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\2aced573f8a1c0195cfb62c4287be3e6\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\f3f748cc9b433fd80f7e39ab0abbd779\transformed\jetified-appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\43a952ab679299623b5223f0715797cf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
@@ -45,25 +45,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\laptop universe\
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\679d603280ebcc875089e2d51dfb2a74\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\ebd0a62beb6d918594cebe156274b0a6\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\33e7ccc6b4b58f33ea57d628f3dd778a\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
+INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-25:12
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:1-26:12
 		INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:4:5-22:19
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:4:5-23:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\2aced573f8a1c0195cfb62c4287be3e6\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\2aced573f8a1c0195cfb62c4287be3e6\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\laptop universe\.gradle\caches\8.12.1\transforms\43a952ab679299623b5223f0715797cf\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
@@ -94,30 +94,34 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\la
 		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:8:9-69
 	android:usesCleartextTraffic
 		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:9:9-44
+activity#com.example.server_status.ServiceActivity
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:13:9-53
+	android:name
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:13:19-50
 activity#com.example.server_status.MainActivity
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:13:9-20:20
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:14:9-21:20
 	android:exported
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:15:13-36
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:16:13-36
 	android:name
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:14:13-41
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:15:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:16:13-19:29
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:17:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:19:27-74
 uses-permission#android.permission.INTERNET
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:23:5-67
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:23:22-64
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:5-79
+ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:24:22-76
+		ADDED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml:25:22-76
 uses-sdk
 INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\My_Stuff\Coding\Android\server_status\app\src\main\AndroidManifest.xml

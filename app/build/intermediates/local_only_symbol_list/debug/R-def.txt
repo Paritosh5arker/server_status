@@ -13,10 +13,17 @@ id line_chart
 id loading_spinner
 id memory_info
 id network_info
+id openServiceBtn
+id serviceDesc
+id serviceName
+id serviceRecyclerView
+id serviceToggle
 id storage_info
 layout activity_cpu_detail
 layout activity_dashboard
 layout activity_main
+layout activity_service
+layout item_service
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
